@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+        <title>hightech</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- responsive-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- awesome fontfamily -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./quizPage.css">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+     </head>
+<body>
+    <div class="container">
+        <div class="start-screan ">
+            <h1 class="heading">Quiz App</h1>
+            <div class="settings hide">
+                <label for="num-quesrions">Tirada su aalaha</label>
+                <select name="" id="num0questions">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option> 
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                </select>
+
+                <label for="num-quesrions">Dooro nooca</label>
+                <select name="" id="category">
+                    <option value="5">xoolaha</option>
+                    <option value="10">deegaanka</option>
+                    <option value="15">odhaaho</option>
+                    <option value="20">hal xidhaale</option>
+                    <option value="25">googaa</option>
+                    <option value="30">maahmaahyo</option>
+                </select>
+
+                <label for="num-quesrions"> Dooro Deegaanka</label>
+                <select name="" id="difficulty">
+                    <option value="5">Waqooyi</option>
+                    <option value="10">Koonfur</option>
+                    <option value="15">Djabuuti</option>
+                    <option value="20">Soomalida ethopia</option>
+                    <option value="25">Somalida Kenya</option>
+                    <option value="25">may</option>
+                </select>
+
+                <label for="num-quesrions">Wakhtiga</label>
+                <select name="" id="time">
+                    <option value="15">15 seconds</option>
+                    <option value="25">25 seconds </option>
+                    <option value="30">30 seconds </option>   
+                </select>
+            </div>
+            <button class="btn start">Start Quiz</button>
+        </div>
+        <div class="quiz " >
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">50</span>
+                </div>
+            </div>
+            <div class="question-wrapper">
+                <div class="number">
+                  Question <span class="current">1</span> <span class="total">/10</span>
+                </div>
+                <div class="question">This is a Question</div>
+                <div class="answer-wrapper">
+                    <div class="answer selected">
+                        <span class="text">answer</span>
+                        <span class="Checkbox">
+                            <!-- <span><i class="fa fa-facebook-f"></i></span> -->
+                           <span class="icon">/</span>
+                        </span>
+                    </div>
+
+                    <div class="answer correct ">
+                        <span class="text">answer</span>
+                        <span class="Checkbox">
+                            <!-- <span><i class="fa fa-facebook-f"></i></span> -->
+                           <span class="icon">/</span>
+                        </span>
+                    </div>
+
+                    <div class="answer wrong ">
+                        <span class="text">answer</span>
+                        <span class="Checkbox">
+                            <!-- <span><i class="fa fa-facebook-f"></i></span> -->
+                           <span class="icon">/</span>
+                        </span>
+                    </div>
+
+                    
+                    <div class="answer correct ">
+                        <span class="text">answer</span>
+                        <span class="Checkbox">
+                            <!-- <span><i class="fa fa-facebook-f"></i></span> -->
+                           <span class="icon">/</span>
+                        </span>
+                    </div>
+                </div>
+                <button class="btn submit" disabled>submit</button>
+                <button class="btn next">Next</button>
+
+            </div>
+        </div>
+        <div class="end-screan hide">
+            <h1 class="heading">Quiz App</h1>
+            <div class="score">
+                <span class="score-text">your score</span>
+                <div>
+                    <span class="final-score:">0</span>
+                    <span class="final-score:">/10</span>
+                </div>
+                <button class="btn restart">Restart Quiz</button>
+            </div>
+        </div>   
+    </div>
+    <script src="./quizPage.js"> </script>
+</body>
+</html> 
